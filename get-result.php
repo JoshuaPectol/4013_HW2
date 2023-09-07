@@ -11,7 +11,7 @@ if(isset($_GET['my-name'])){
   echo $_GET['my-name'];
 }
 else{
-  <p>Nothing sent to page<p>
+  return"<p>Nothing sent to page<p>";
 }
 include "view-footer.php";
 ?>
