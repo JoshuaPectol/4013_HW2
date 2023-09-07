@@ -3,15 +3,17 @@ $pageTitle = "Get Result";
 include "view-header.php";
 ?>
 <h1>Get Result</h1>
+
 <?php
-if(isset($_GET['my-name'])){
-?>
-  <p>The value sent is:</p>
-<?php
-  echo $_GET['my-name'];
-}
-else{
-  return"<p>Nothing sent to page<p>";
-}
+echo getDisplay();
 include "view-footer.php";
+
+function getDisplay(){
+  if(isset($_GET['my-name'])){
+    return "<p>The value sent is:</p>" . $_GET['my-name'];
+  }
+  else{
+    return"<p>Nothing posted to page<p>";
+  }
+}
 ?>
