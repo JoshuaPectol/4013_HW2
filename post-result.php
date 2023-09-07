@@ -2,6 +2,7 @@
 $pageTitle = "Post Result";
 include "view-header.php";
 ?>
+
 <h1>Post Result</h1>
 
 <?php
@@ -13,7 +14,7 @@ function getDisplay(){
     return "<p>The value sent is:</p>" . $_POST['my-name'];
   }
   else{
-    return"<p>Nothing posted to page<p>;"
+    return"<p>Nothing posted to page<p>";
   }
 }
 ?>
